@@ -1,0 +1,17 @@
+{
+  "name": "project19-nft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./asset/scss/main.scss ./asset/css/main.css --watch"
+  },
+  "author": "mm-tvkl",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.77.8"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
