@@ -1,0 +1,28 @@
+.button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button-orange{
+    background-color: var(--color-orange);
+    color: white;
+    transition: background-color 300ms;
+    -webkit-transition: background-color 300ms;
+    -moz-transition: background-color 300ms;
+    -ms-transition: background-color 300ms;
+    -o-transition: background-color 300ms;
+}
+
+.button-orange:hover{
+    background-color: darken($color: #FF3C00, $amount: 20);
+}

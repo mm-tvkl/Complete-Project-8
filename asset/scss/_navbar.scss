@@ -1,0 +1,113 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+}
+
+.navbar-brand{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main-navbar{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+
+    li{
+        font-size: 22px;
+        padding: 0.7rem 0;
+        transition: color 300ms 0;
+        -webkit-transition: color 300ms 0;
+        -moz-transition: color 300ms 0;
+        -ms-transition: color 300ms 0;
+        -o-transition: color 300ms 0;
+        
+        &:hover{
+            color: var(--color-orange);
+        }
+    }
+
+    .active{
+        color: var(--color-orange);
+        position: relative;
+    }
+
+    .active::before{
+        content: "";
+        width: 70%;
+        height: 1px;
+        background-color: orangered;
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translate(50% , 0);
+        -webkit-transform: translate(50% , 0);
+        -moz-transform: translate(50% , 0);
+        -ms-transform: translate(50% , 0);
+        -o-transform: translate(50% , 0);
+}
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button-container-mobile{
+    display: none;
+}
+
+
+.button-shopping{
+    text-decoration: none;
+}
+
+.navbar-toggler{
+    display: none;
+    border: 0;
+    
+    svg{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .navbar{
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .main-navbar{
+        display: none;
+    }
+
+    .button-container{
+        display: none;
+    }
+    
+    .button-container-mobile{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navbar-toggler{
+        display: block;
+    }
+
+    .navbar-brand{
+        font-size: 24px;
+    }
+}

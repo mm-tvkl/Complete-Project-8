@@ -1,3 +1,27 @@
+@font-face {
+  font-family: kalameh;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/_eot/KalamehWeb-Regular.eot") format("OpenType"), url("../font/_Woff/KalamehWeb-Regular.woff") format("woff"), url("../font/_Woff2/KalamehWeb-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: kalameh;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../font/_eot/KalamehWeb-Thin.eot") format("OpenType"), url("../font/_Woff/KalamehWeb-Thin.woff") format("woff"), url("../font/_Woff2/KalamehWeb-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: kalameh;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../font/_eot/KalamehWeb-Bold.eot") format("OpenType"), url("../font/_Woff/KalamehWeb-Bold.woff") format("woff"), url("../font/_Woff2/KalamehWeb-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: kalameh;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../font/_eot/KalamehWeb-Black.eot") format("OpenType"), url("../font/_Woff/KalamehWeb-Black.woff") format("woff"), url("../font/_Woff2/KalamehWeb-Black.woff2") format("woff2");
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,32 +36,141 @@
 }
 
 body {
-  font-family: kalameh;
+  font-family: "kalameh";
+  font-weight: normal;
+  background-color: var(--color-dark);
 }
 
-@font-face {
-  font-family: kalameh;
-  font-style: normal;
-  font-weight: 100;
-  src: url("../font/_eot/KalamehWeb-Regular.eot") format("OpenType"), url("../font/_Woff/KalamehWeb-Regular.woff") format("woff"), url("../font/_Woff2/KalamehWeb-Regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: kalameh;
-  font-style: normal;
-  font-weight: normal;
-  src: url("../font/_eot/KalamehWeb-Thin.eot") format("OpenType"), url("../font/_Woff/KalamehWeb-Thin.woff") format("woff"), url("../font/_Woff2/KalamehWeb-Thin.woff2") format("woff2");
-}
-@font-face {
-  font-family: kalameh;
-  font-style: normal;
+.button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 20px;
   font-weight: bold;
-  src: url("../font/_eot/KalamehWeb-Bold.eot") format("OpenType"), url("../font/_Woff/KalamehWeb-Bold.woff") format("woff"), url("../font/_Woff2/KalamehWeb-Bold.woff2") format("woff2");
 }
-@font-face {
-  font-family: kalameh;
-  font-style: normal;
-  font-weight: 900;
-  src: url("../font/_eot/KalamehWeb-Black.eot") format("OpenType"), url("../font/_Woff/KalamehWeb-Black.woff") format("woff"), url("../font/_Woff2/KalamehWeb-Black.woff2") format("woff2");
+
+.button-orange {
+  background-color: var(--color-orange);
+  color: white;
+  transition: background-color 300ms;
+  -webkit-transition: background-color 300ms;
+  -moz-transition: background-color 300ms;
+  -ms-transition: background-color 300ms;
+  -o-transition: background-color 300ms;
+}
+
+.button-orange:hover {
+  background-color: #992400;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.main-navbar {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+.main-navbar li {
+  font-size: 22px;
+  padding: 0.7rem 0;
+  transition: color 300ms 0;
+  -webkit-transition: color 300ms 0;
+  -moz-transition: color 300ms 0;
+  -ms-transition: color 300ms 0;
+  -o-transition: color 300ms 0;
+}
+.main-navbar li:hover {
+  color: var(--color-orange);
+}
+.main-navbar .active {
+  color: var(--color-orange);
+  position: relative;
+}
+.main-navbar .active::before {
+  content: "";
+  width: 70%;
+  height: 1px;
+  background-color: orangered;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 0);
+  -webkit-transform: translate(50%, 0);
+  -moz-transform: translate(50%, 0);
+  -ms-transform: translate(50%, 0);
+  -o-transform: translate(50%, 0);
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button-container-mobile {
+  display: none;
+}
+
+.button-shopping {
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  display: none;
+  border: 0;
+}
+.navbar-toggler svg {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main-navbar {
+    display: none;
+  }
+  .button-container {
+    display: none;
+  }
+  .button-container-mobile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .navbar-toggler {
+    display: block;
+  }
+  .navbar-brand {
+    font-size: 24px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,5 @@
+@import "./fonts";
+
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +14,10 @@
 }
 
 body{
-    font-family: kalameh;
+    font-family: "kalameh";
+    font-weight: normal;
+    background-color: var(--color-dark)
 }
 
-@import "./fonts";
+@import "./base";
+@import "./navbar";
