@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-orange: #FF3C00;
+  --color-purple: #8212f1;
+  --color-red: #bc0505;
+  --color-dark: #07101d;
+}
+
 body {
   font-family: kalameh;
 }
