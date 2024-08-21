@@ -1,6 +1,6 @@
 .button{
     text-decoration: none;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 1rem;
@@ -25,4 +25,8 @@
 
 .button-orange:hover{
     background-color: darken($color: #FF3C00, $amount: 20);
+}
+
+.text-orange{
+    color: var(--color-orange);
 }

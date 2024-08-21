@@ -1,16 +1,16 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 5rem;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 40px;
     font-weight: bold;
 }
 
-.main-navbar{
+.main-navbar {
     display: flex;
     align-items: center;
     list-style-type: none;
@@ -19,7 +19,7 @@
     padding: 0;
     gap: 1.5rem;
 
-    li{
+    li {
         font-size: 22px;
         padding: 0.7rem 0;
         transition: color 300ms 0;
@@ -27,18 +27,18 @@
         -moz-transition: color 300ms 0;
         -ms-transition: color 300ms 0;
         -o-transition: color 300ms 0;
-        
-        &:hover{
+
+        &:hover {
             color: var(--color-orange);
         }
     }
 
-    .active{
+    .active {
         color: var(--color-orange);
         position: relative;
     }
 
-    .active::before{
+    .active::before {
         content: "";
         width: 70%;
         height: 1px;
@@ -46,40 +46,41 @@
         position: absolute;
         bottom: 0;
         right: 50%;
-        transform: translate(50% , 0);
-        -webkit-transform: translate(50% , 0);
-        -moz-transform: translate(50% , 0);
-        -ms-transform: translate(50% , 0);
-        -o-transform: translate(50% , 0);
-}
+        transform: translate(50%, 0);
+        -webkit-transform: translate(50%, 0);
+        -moz-transform: translate(50%, 0);
+        -ms-transform: translate(50%, 0);
+        -o-transform: translate(50%, 0);
+    }
 }
 
-.button-container{
+.button-container {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.button-container-mobile{
+.button-container-mobile {
     display: none;
 }
 
 
-.button-shopping{
+.button-shopping {
     text-decoration: none;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     display: none;
     border: 0;
 
-    &:focus, &:active{
+    &:focus,
+    &:active {
         border: 0;
         outline: 0;
         box-shadow: none;
     }
-    
-    svg{
+
+    svg {
         transform: scale(1.5);
         -webkit-transform: scale(1.5);
         -moz-transform: scale(1.5);
@@ -88,13 +89,13 @@
     }
 }
 
-.shape1{
+.shape1 {
     position: absolute;
     left: 0;
     top: 0;
 }
 
-.shape2{
+.shape2 {
     position: absolute;
     width: 600px;
     height: 600px;
@@ -105,45 +106,121 @@
     -webkit-filter: blur(100px);
 }
 
+// Offcanvas
+.offcanvas {
+    background-color: var(--color-dark);
+    color: white;
+
+}
+
+.offcanvas-title {
+    font-weight: bold;
+}
+
+.button-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offcanvas-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: block;
+        padding: 1rem 0;
+        font-size: 24px;
+
+        a {
+            color: white;
+            text-decoration: none;
+            transition: color 300ms;
+            -webkit-transition: color 300ms;
+            -moz-transition: color 300ms;
+            -ms-transition: color 300ms;
+            -o-transition: color 300ms;
+        }
+
+        &:hover{
+            a{
+                color: var(--color-orange);
+            }
+        }
+    }
+}
+
+.offcanvas-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 200px;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 @media screen and (max-width:1200px) {
-    .navbar{
+    .navbar {
         padding: 2rem 1rem;
     }
 }
 
 @media screen and (max-width:992px) {
-    .main-navbar{
+    .main-navbar {
         display: none;
     }
 
-    .button-container{
+    .button-container {
         display: none;
     }
-    
-    .button-container-mobile{
+
+    .button-container-mobile {
         display: flex;
         align-items: center;
         gap: 1rem;
     }
 
-    .navbar-toggler{
+    .navbar-toggler {
         display: block;
     }
 
-    .navbar-brand{
+    .navbar-brand {
         font-size: 24px;
     }
 }
 
 @media screen and (max-width:768px) {
-    .shape1{
+    .shape1 {
         position: absolute;
         left: 0;
         top: 0;
         display: none;
     }
 
-    .shape2{
+    .shape2 {
         position: absolute;
         width: 300px;
         height: 300px;
@@ -153,5 +230,5 @@
         background: radial-gradient(#8212f14d 1%, #07101d 70%);
         filter: blur(50px);
         -webkit-filter: blur(50px);
-}
+    }
 }
