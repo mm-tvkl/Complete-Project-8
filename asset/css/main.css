@@ -39,6 +39,8 @@ body {
   font-family: "kalameh";
   font-weight: normal;
   background-color: var(--color-dark);
+  overflow: hidden;
+  width: 100vw;
 }
 
 .button {
@@ -140,12 +142,34 @@ body {
   display: none;
   border: 0;
 }
+.navbar-toggler:focus, .navbar-toggler:active {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
 .navbar-toggler svg {
   transform: scale(1.5);
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
+}
+
+.shape1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.shape2 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -15%;
+  right: -10%;
+  background: radial-gradient(rgba(130, 18, 241, 0.3019607843) 1%, #07101d 70%);
+  filter: blur(100px);
+  -webkit-filter: blur(100px);
 }
 
 @media screen and (max-width: 1200px) {
@@ -170,6 +194,25 @@ body {
   }
   .navbar-brand {
     font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .shape1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  .shape2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: auto;
+    left: 0%;
+    top: -10%;
+    background: radial-gradient(rgba(130, 18, 241, 0.3019607843) 1%, #07101d 70%);
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
   }
 }
 

@@ -16,7 +16,9 @@
 body{
     font-family: "kalameh";
     font-weight: normal;
-    background-color: var(--color-dark)
+    background-color: var(--color-dark);
+    overflow: hidden;
+    width: 100vw;
 }
 
 @import "./base";
