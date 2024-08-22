@@ -39,6 +39,7 @@ body {
   font-family: "kalameh";
   font-weight: normal;
   background-color: var(--color-dark);
+  color: white;
   overflow: hidden;
   width: 100vw;
 }
@@ -74,6 +75,10 @@ body {
 
 .text-orange {
   color: var(--color-orange);
+}
+
+.text_muted {
+  color: rgba(255, 255, 255, 0.5019607843);
 }
 
 .navbar {
@@ -163,6 +168,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: -1;
 }
 
 .shape2 {
@@ -174,6 +180,7 @@ body {
   background: radial-gradient(rgba(130, 18, 241, 0.3019607843) 1%, #07101d 70%);
   filter: blur(100px);
   -webkit-filter: blur(100px);
+  z-index: -1;
 }
 
 .offcanvas {
@@ -268,6 +275,9 @@ body {
   .navbar-brand {
     font-size: 24px;
   }
+  .shape1 {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .shape1 {
@@ -287,6 +297,13 @@ body {
     filter: blur(50px);
     -webkit-filter: blur(50px);
   }
+}
+.main-header {
+  padding: 7rem 0;
+}
+
+.main-title {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */

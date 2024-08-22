@@ -93,6 +93,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    z-index: -1;
 }
 
 .shape2 {
@@ -104,6 +105,7 @@
     background: radial-gradient(#8212f14d 1%, #07101d 70%);
     filter: blur(100px);
     -webkit-filter: blur(100px);
+    z-index: -1;
 }
 
 // Offcanvas
@@ -209,6 +211,10 @@
 
     .navbar-brand {
         font-size: 24px;
+    }
+
+    .shape1{
+        display: none;
     }
 }
 

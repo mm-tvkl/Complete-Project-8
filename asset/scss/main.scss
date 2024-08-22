@@ -17,9 +17,11 @@ body{
     font-family: "kalameh";
     font-weight: normal;
     background-color: var(--color-dark);
+    color: white;
     overflow: hidden;
     width: 100vw;
 }
 
 @import "./base";
 @import "./navbar";
+@import "./header";
