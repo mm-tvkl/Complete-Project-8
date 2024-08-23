@@ -309,6 +309,15 @@ body {
 .main-header {
   padding: 7rem 0;
 }
+.main-header p {
+  margin: 2rem 0;
+}
+.main-header h1 {
+  margin: 2rem 0;
+}
+.main-header .header-form {
+  margin: 2rem 0;
+}
 
 .main-title {
   font-weight: 700;
@@ -319,6 +328,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-description {
+  font-size: 24px;
 }
 
 .search-form {
@@ -379,6 +392,30 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 2rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .main-title {
+    font-size: 3.5rem;
+  }
+  .header-description {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .main-title {
+    font-size: 3rem;
+  }
+  .header-description {
+    font-size: 18px;
+  }
+  .main-button {
+    font-size: 18px;
+  }
+  .search-form .search-input {
+    width: 90%;
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
