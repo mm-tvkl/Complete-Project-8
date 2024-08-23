@@ -81,6 +81,14 @@ body {
   color: rgba(255, 255, 255, 0.5019607843);
 }
 
+.fs26 {
+  font-size: 26px;
+}
+
+.fs24 {
+  font-size: 24px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -304,6 +312,73 @@ body {
 
 .main-title {
   font-weight: 700;
+  font-size: 4rem;
+}
+
+.header-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-form {
+  position: relative;
+  flex-grow: 2;
+}
+.search-form .search-input {
+  padding: 0 3.5rem 0 1rem;
+  background-color: transparent;
+  border: 2px solid var(--color-orange);
+  padding: 0.7rem 3.5rem 0.7rem 0.5rem;
+  color: white;
+  outline: none;
+  font-size: 20px;
+  display: block;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  height: 68px;
+  width: 80%;
+}
+.search-form .search-input:focus {
+  border: 2px solid #c12d00;
+  outline: none;
+  transition: border-color 300ms;
+  -webkit-transition: border-color 300ms;
+  -moz-transition: border-color 300ms;
+  -ms-transition: border-color 300ms;
+  -o-transition: border-color 300ms;
+}
+.search-form svg {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+}
+
+.main-button {
+  background: linear-gradient(90deg, #7011AD 0%, #BC0505 49.31%, #FC630F 100%);
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  display: inline-block;
+  font-size: 24px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
