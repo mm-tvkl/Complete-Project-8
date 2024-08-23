@@ -411,7 +411,7 @@ body {
 }
 .header-img-section .header-path-2 {
   position: absolute;
-  bottom: -15%;
+  bottom: -10%;
   left: 6%;
 }
 
@@ -436,6 +436,23 @@ body {
   .search-form .search-input {
     width: 90%;
     font-size: 16px;
+  }
+  .header-img-section .header-img {
+    width: 150%;
+    position: absolute;
+    top: -20%;
+    left: 0%;
+    z-index: -1;
+  }
+  .header-img-section .header-path-1 {
+    position: absolute;
+    top: -10%;
+    right: 0;
+  }
+  .header-img-section .header-path-2 {
+    position: absolute;
+    bottom: 10%;
+    left: 6%;
   }
 }
 
