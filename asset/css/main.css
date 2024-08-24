@@ -35,6 +35,10 @@
   --color-dark: #07101d;
 }
 
+html {
+  overflow-x: hidden !important;
+}
+
 body {
   font-family: "kalameh";
   font-weight: normal;
@@ -475,6 +479,10 @@ body {
   font-weight: 700;
 }
 
+.header-md {
+  display: none;
+}
+
 @media screen and (max-width: 1400px) {
   .main-title {
     font-size: 3.5rem;
@@ -525,6 +533,138 @@ body {
     -o-transform: scale(0.7);
     bottom: 10%;
     right: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-lg {
+    display: none;
+  }
+  .header-md {
+    display: flex;
+  }
+  .header-description {
+    text-align: center;
+  }
+  .main-title {
+    text-align: center;
+  }
+  .header-description {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .main-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .header-img-section {
+    position: relative;
+    height: 500px;
+  }
+  .header-img-section .header-img {
+    width: 80%;
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    z-index: -1;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+  }
+  .header-img-section .header-path-1 {
+    position: absolute;
+    top: 5%;
+    right: 20%;
+  }
+  .header-img-section .header-path-2 {
+    position: absolute;
+    bottom: -10%;
+    left: 10%;
+  }
+  .header-img-section .persons-container {
+    position: absolute;
+    bottom: 0%;
+    right: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-description {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .main-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .header-img-section {
+    position: relative;
+    height: 400px;
+  }
+  .header-img-section .header-img {
+    width: 80%;
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    z-index: -1;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+  }
+  .header-img-section .header-path-1 {
+    position: absolute;
+    top: 5%;
+    right: 20%;
+  }
+  .header-img-section .header-path-2 {
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+  }
+  .header-img-section .persons-container {
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header-img-section {
+    position: relative;
+    height: 400px;
+  }
+  .header-img-section .header-img {
+    width: 80%;
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    z-index: -1;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    -moz-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -o-transform: translate(-50%, 0%);
+  }
+  .header-img-section .header-path-1 {
+    position: absolute;
+    top: 5%;
+    right: 15%;
+  }
+  .header-img-section .header-path-2 {
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+  }
+  .header-img-section .persons-container {
+    position: absolute;
+    bottom: 23%;
+    right: 10%;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
   }
 }
 

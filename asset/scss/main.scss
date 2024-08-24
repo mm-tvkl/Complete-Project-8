@@ -13,6 +13,10 @@
     --color-dark: #07101d;
 }
 
+html{
+    overflow-x: hidden !important;
+}
+
 body{
     font-family: "kalameh";
     font-weight: normal;
