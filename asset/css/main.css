@@ -93,6 +93,11 @@ body {
   font-size: 24px;
 }
 
+@media screen and (max-width: 567px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -632,7 +637,7 @@ body {
 @media screen and (max-width: 576px) {
   .header-img-section {
     position: relative;
-    height: 400px;
+    height: 300px;
   }
   .header-img-section .header-img {
     width: 80%;
@@ -648,18 +653,18 @@ body {
   }
   .header-img-section .header-path-1 {
     position: absolute;
-    top: 5%;
+    top: 0%;
     right: 15%;
   }
   .header-img-section .header-path-2 {
     position: absolute;
-    bottom: 25%;
+    bottom: 5%;
     left: 15%;
   }
   .header-img-section .persons-container {
     position: absolute;
-    bottom: 23%;
-    right: 10%;
+    bottom: 6%;
+    right: 5%;
     transform: scale(0.5);
     -webkit-transform: scale(0.5);
     -moz-transform: scale(0.5);
