@@ -813,5 +813,19 @@ body {
     display: none;
   }
 }
+.title-section-with-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-section-with-button .title-section-logo {
+  gap: 1rem;
+}
+
+.seeall-button {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
 
 /*# sourceMappingURL=main.css.map */

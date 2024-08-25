@@ -1,0 +1,15 @@
+.title-section-with-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title-section-logo{
+        gap: 1rem;
+    }
+}
+
+.seeall-button{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
