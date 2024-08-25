@@ -33,6 +33,7 @@
   --color-purple: #8212f1;
   --color-red: #bc0505;
   --color-dark: #07101d;
+  --color-dark-2: #1a1a1aad;
 }
 
 html {
@@ -91,6 +92,25 @@ body {
 
 .fs24 {
   font-size: 24px;
+}
+
+.title-section {
+  display: flex;
+  gap: 1rem;
+}
+
+.title-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(270.13deg, #FF640D 6.95%, rgba(254, 76, 11, 0.975119) 19.3%, rgba(252, 6, 6, 0.903404) 43.99%, rgba(130, 18, 241, 0.81) 95.06%);
 }
 
 @media screen and (max-width: 567px) {

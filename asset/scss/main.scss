@@ -11,6 +11,7 @@
     --color-purple: #8212f1;
     --color-red: #bc0505;
     --color-dark: #07101d;
+    --color-dark-2: #1a1a1aad;
 }
 
 html{
@@ -29,3 +30,4 @@ body{
 @import "./base";
 @import "./navbar";
 @import "./header";
+@import "./wallet";
