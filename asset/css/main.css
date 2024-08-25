@@ -488,6 +488,12 @@ body {
   display: none;
 }
 
+.author-description {
+  font-size: 0.8rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
 @media screen and (max-width: 1400px) {
   .main-title {
     font-size: 3.5rem;
@@ -600,7 +606,7 @@ body {
   }
   .main-title {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .header-img-section {
     position: relative;
