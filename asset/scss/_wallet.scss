@@ -1,0 +1,128 @@
+.wallet-card-section>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wallet-card{
+    width: 184px;
+    height: 188px;
+    background-color: #FFFFFF0F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 5px;
+    position: relative;
+    
+    img{
+        margin-bottom: 1rem;
+    }
+
+    .flow-rect{
+        width: 43.3px;
+        height: 30px;
+        background-color: #07101D;
+        position: absolute;
+        top: 90%;
+        left: 86%;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        overflow: hidden;
+    }
+}
+
+.wallet-1{
+    border-image: linear-gradient(315deg, var(--color-orange) 0%, var(--color-dark) 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+
+    .flow-rect{
+        border-top: 2px solid var(--color-orange);
+    }
+}
+
+.wallet-2{
+    border-image: linear-gradient(315deg, #00D1FF 0%, var(--color-dark) 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+
+    .flow-rect{
+        border-top: 2px solid #00D1FF;
+    }
+}
+
+.wallet-3{
+    border-image: linear-gradient(315deg, #760AFF 0%, var(--color-dark) 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+
+    .flow-rect{
+        border-top: 2px solid #760AFF;
+    }
+}
+
+.wallet-4{
+    border-image: linear-gradient(315deg, #FE007A 0%, var(--color-dark) 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+
+    .flow-rect{
+        border-top: 2px solid #FE007A;
+    }
+}
+
+.wallet-5{
+    border-image: linear-gradient(315deg, #FFBF1C 0%, var(--color-dark) 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+
+    .flow-rect{
+        border-top: 2px solid #FFBF1C;
+    }
+}
+
+.wallet-6{
+    border-image: linear-gradient(315deg, var(--color-orange) 0%, var(--color-dark) 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+
+    .flow-rect{
+        border-top: 2px solid var(--color-orange);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .wallet-card, .wallet-card img, .wallet-card h4{
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+    }
+
+    .flow-rect{
+        transform: scale(0.9) rotate(-45deg);
+        -webkit-transform: scale(0.9) rotate(-45deg);
+        -moz-transform: scale(0.9) rotate(-45deg);
+        -ms-transform: scale(0.9) rotate(-45deg);
+        -o-transform: scale(0.9) rotate(-45deg);
+    }
+}
+
+@media screen and (max-width:470px) {
+    .wallet-card{
+        
+        .flow-rect{
+            display: none;
+        }
+    }
+}
