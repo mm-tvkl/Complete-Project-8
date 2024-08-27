@@ -45,7 +45,12 @@
 
 .title-section{
     display: flex;
+    align-items: center;
     gap: 1rem;
+
+    h2,h4{
+        margin: 0.5rem 0;
+    }
 }
 
 .title-logo{
@@ -62,8 +67,69 @@
     background: linear-gradient(270.13deg, #FF640D 6.95%, rgba(254, 76, 11, 0.975119) 19.3%, rgba(252, 6, 6, 0.903404) 43.99%, rgba(130, 18, 241, 0.81) 95.06%);
 }
 
+@media screen and (max-width:768px) {
+    .title-section{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    
+        h2{
+            font-size: 1.2rem;
+        }
+        h4{
+            font-size: 1rem;
+        }
+
+        .seeall-button{
+            font-size: 1rem;
+
+            svg{
+                transform: scale(0.7);
+                -webkit-transform: scale(0.7);
+                -moz-transform: scale(0.7);
+                -ms-transform: scale(0.7);
+                -o-transform: scale(0.7);
+            }
+        }
+    }
+
+    .title-logo{
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+    }
+}
+
+.seaall-button-sm{
+    display: none;
+}
+
 @media screen and (max-width:567px) {
     .container{
         padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .seeall-button{
+        display: none;
+    }
+
+    .seaall-button-sm{
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        margin: 1rem 0;
+
+        svg{
+            transform: scale(0.7);
+            -webkit-transform: scale(0.7);
+            -moz-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+            -o-transform: scale(0.7);
+}
     }
 }
