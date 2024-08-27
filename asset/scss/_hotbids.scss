@@ -130,6 +130,12 @@
     }
 }
 
+@media screen and (max-width:992px) {
+    .bid-card-3{
+        display: none;
+    }
+}
+
 
 @media screen and (max-width:768px) {
     .bid-card{
@@ -354,5 +360,9 @@
                 padding: 0.7rem 2rem;
             }
         }
+    }
+
+    .bid-card-3{
+        display: block;
     }
 }

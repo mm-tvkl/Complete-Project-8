@@ -930,6 +930,11 @@ body {
   margin-top: 1rem;
 }
 
+@media screen and (max-width: 992px) {
+  .bid-card-3 {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .bid-card {
     background: rgba(255, 255, 255, 0.1019607843);
@@ -1118,6 +1123,9 @@ body {
   .bid-card .bid-card-body .request-button {
     font-size: 0.8rem;
     padding: 0.7rem 2rem;
+  }
+  .bid-card-3 {
+    display: block;
   }
 }
 
