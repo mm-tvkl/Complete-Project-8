@@ -992,6 +992,23 @@ body {
   padding: 3rem 0;
 }
 
+.shape3 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: rgba(0, 255, 26, 0.1843137255);
+  filter: blur(150px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-filter: blur(150px);
+}
+
 @media screen and (max-width: 992px) {
   .bid-card-3 {
     display: none;
