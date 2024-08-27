@@ -130,6 +130,11 @@
     }
 }
 
+.bid-card-container{
+    row-gap: 1rem;
+    padding: 3rem 0;
+}
+
 @media screen and (max-width:992px) {
     .bid-card-3{
         display: none;
