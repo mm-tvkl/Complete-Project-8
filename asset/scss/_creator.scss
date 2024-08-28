@@ -1,0 +1,138 @@
+.creator-card-section{
+    row-gap: 1.5rem;
+}
+
+.creator-card{
+    background: #FFFFFF1A;
+    border: 2px solid #FFFFFF33;
+    backdrop-filter: blur(100px);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .creator-card-text-section{
+        flex-grow: 1;
+        padding-left: 2rem;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .star-box{
+            margin: 1rem 0;
+        }
+
+        .sale-box{
+            display: flex;
+            justify-content: space-between;
+
+            p{
+                margin: 0;
+                font-size: 14px;
+            }
+        }
+
+        h4{
+            margin: 0;
+            font-size: 1.5rem;
+        }
+    }
+
+    // creator-card-image-section
+}
+
+@media screen and (max-width:1200px) {
+    .creator-card{
+        padding: 1rem;
+    
+        .creator-card-text-section{
+            padding-left: 1rem;
+
+            .sale-box{
+                display: flex;
+                justify-content: space-between;
+    
+                p{
+                    font-size: 14px;
+                }
+            }
+
+            h4{
+                margin: 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .creator-card{
+        padding: 1rem;
+    
+        .creator-card-text-section{
+            padding-left: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .creator-card{
+        padding: 1rem;
+    
+        .creator-card-text-section{
+            padding-left: 1rem;
+
+            .sale-box{
+                display: flex;
+                justify-content: space-between;
+    
+                p{
+                    font-size: 14px;
+                }
+            }
+
+            h4{
+                margin: 0;
+                font-size: 1.5rem;
+            }
+        }
+
+        .creator-card-image-section{
+            transform: scale(0.8);
+            -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            -o-transform: scale(0.8);
+}
+    }
+}
+
+@media screen and (max-width:480px) {
+    .creator-card{
+        padding: 1rem;
+    
+        .creator-card-text-section{
+            padding-left: 1rem;
+
+            .sale-box{
+                display: flex;
+                justify-content: space-between;
+    
+                p{
+                    font-size: 14px;
+                }
+            }
+
+            h4{
+                margin: 0;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

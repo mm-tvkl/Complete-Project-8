@@ -161,7 +161,7 @@ body {
     display: none;
   }
   .seaall-button-sm {
-    display: inline-block;
+    display: block;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -1275,7 +1275,7 @@ body {
 }
 
 .trend-card-section {
-  padding: 20rem 0 10rem 0;
+  padding: 20rem 0 5rem 0;
   row-gap: 15rem;
 }
 
@@ -1353,7 +1353,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .trend-card-section {
-    padding: 15rem 0;
+    padding: 15rem 0 5rem 0;
     row-gap: 15rem;
   }
   .trend-card .trend-card-header img {
@@ -1374,7 +1374,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .trend-card-section {
-    padding: 10rem 0;
+    padding: 10rem 0 5rem 0;
     row-gap: 10rem;
   }
   .trend-card .trend-card-header {
@@ -1405,7 +1405,7 @@ body {
 }
 @media screen and (max-width: 578px) {
   .trend-card-section {
-    padding: 17rem 0;
+    padding: 17rem 0 5rem 0;
     row-gap: 17rem;
   }
   .trend-card .trend-card-header {
@@ -1426,7 +1426,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   .trend-card-section {
-    padding: 17rem 0;
+    padding: 17rem 0 3rem 0;
     row-gap: 17rem;
   }
   .trend-card .trend-card-header {
@@ -1448,7 +1448,7 @@ body {
 }
 @media screen and (max-width: 430px) {
   .trend-card-section {
-    padding: 17rem 0;
+    padding: 17rem 0 3rem 0;
     row-gap: 15rem;
   }
   .trend-card .trend-card-header {
@@ -1470,7 +1470,7 @@ body {
 }
 @media screen and (max-width: 400px) {
   .trend-card-section {
-    padding: 17rem 0;
+    padding: 17rem 0 3rem 0;
     row-gap: 10rem;
   }
   .trend-card .trend-card-header {
@@ -1492,7 +1492,7 @@ body {
 }
 @media screen and (max-width: 350px) {
   .trend-card-section {
-    padding: 17rem 0;
+    padding: 17rem 0 3rem 0;
     row-gap: 10rem;
   }
   .trend-card .trend-card-header {
@@ -1510,6 +1510,120 @@ body {
     -moz-transform: translate(-50%, 0) scale(0.9);
     -ms-transform: translate(-50%, 0) scale(0.9);
     -o-transform: translate(-50%, 0) scale(0.9);
+  }
+}
+.creator-card-section {
+  row-gap: 1.5rem;
+}
+
+.creator-card {
+  background: rgba(255, 255, 255, 0.1019607843);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(100px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.creator-card .creator-card-text-section {
+  flex-grow: 1;
+  padding-left: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.creator-card .creator-card-text-section .star-box {
+  margin: 1rem 0;
+}
+.creator-card .creator-card-text-section .sale-box {
+  display: flex;
+  justify-content: space-between;
+}
+.creator-card .creator-card-text-section .sale-box p {
+  margin: 0;
+  font-size: 14px;
+}
+.creator-card .creator-card-text-section h4 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .creator-card {
+    padding: 1rem;
+  }
+  .creator-card .creator-card-text-section {
+    padding-left: 1rem;
+  }
+  .creator-card .creator-card-text-section .sale-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .creator-card .creator-card-text-section .sale-box p {
+    font-size: 14px;
+  }
+  .creator-card .creator-card-text-section h4 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .creator-card {
+    padding: 1rem;
+  }
+  .creator-card .creator-card-text-section {
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .creator-card {
+    padding: 1rem;
+  }
+  .creator-card .creator-card-text-section {
+    padding-left: 1rem;
+  }
+  .creator-card .creator-card-text-section .sale-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .creator-card .creator-card-text-section .sale-box p {
+    font-size: 14px;
+  }
+  .creator-card .creator-card-text-section h4 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .creator-card .creator-card-image-section {
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 480px) {
+  .creator-card {
+    padding: 1rem;
+  }
+  .creator-card .creator-card-text-section {
+    padding-left: 1rem;
+  }
+  .creator-card .creator-card-text-section .sale-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .creator-card .creator-card-text-section .sale-box p {
+    font-size: 14px;
+  }
+  .creator-card .creator-card-text-section h4 {
+    margin: 0;
+    font-size: 1.2rem;
   }
 }
 
