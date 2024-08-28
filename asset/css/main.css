@@ -1004,7 +1004,7 @@ body {
   filter: blur(150px);
   position: absolute;
   left: 0;
-  bottom: 0;
+  top: 40%;
   z-index: -1;
   -webkit-filter: blur(150px);
 }
@@ -1324,6 +1324,21 @@ body {
   display: none;
 }
 
+.shape4 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  z-index: -1;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--color-purple);
+  filter: blur(400px);
+  -webkit-filter: blur(400px);
+}
+
 @media screen and (max-width: 1400px) {
   .trend-card .trend-card-header img {
     position: absolute;
@@ -1337,6 +1352,10 @@ body {
   }
 }
 @media screen and (max-width: 1200px) {
+  .trend-card-section {
+    padding: 15rem 0;
+    row-gap: 15rem;
+  }
   .trend-card .trend-card-header img {
     position: absolute;
     top: -170%;
@@ -1427,6 +1446,28 @@ body {
     -o-transform: translate(-50%, 0) scale(0.9);
   }
 }
+@media screen and (max-width: 430px) {
+  .trend-card-section {
+    padding: 17rem 0;
+    row-gap: 15rem;
+  }
+  .trend-card .trend-card-header {
+    text-align: center;
+    position: relative;
+    height: 135px;
+  }
+  .trend-card .trend-card-header img {
+    width: 100%;
+    position: absolute;
+    top: -130%;
+    left: 50%;
+    transform: translate(-50%, 0) scale(0.9);
+    -webkit-transform: translate(-50%, 0) scale(0.9);
+    -moz-transform: translate(-50%, 0) scale(0.9);
+    -ms-transform: translate(-50%, 0) scale(0.9);
+    -o-transform: translate(-50%, 0) scale(0.9);
+  }
+}
 @media screen and (max-width: 400px) {
   .trend-card-section {
     padding: 17rem 0;
@@ -1441,6 +1482,28 @@ body {
     width: 100%;
     position: absolute;
     top: -110%;
+    left: 50%;
+    transform: translate(-50%, 0) scale(0.9);
+    -webkit-transform: translate(-50%, 0) scale(0.9);
+    -moz-transform: translate(-50%, 0) scale(0.9);
+    -ms-transform: translate(-50%, 0) scale(0.9);
+    -o-transform: translate(-50%, 0) scale(0.9);
+  }
+}
+@media screen and (max-width: 350px) {
+  .trend-card-section {
+    padding: 17rem 0;
+    row-gap: 10rem;
+  }
+  .trend-card .trend-card-header {
+    text-align: center;
+    position: relative;
+    height: 135px;
+  }
+  .trend-card .trend-card-header img {
+    width: 100%;
+    position: absolute;
+    top: -90%;
     left: 50%;
     transform: translate(-50%, 0) scale(0.9);
     -webkit-transform: translate(-50%, 0) scale(0.9);
