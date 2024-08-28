@@ -1,0 +1,68 @@
+.info-card-container{
+    padding: 8rem 0;
+    row-gap: 5rem;
+    justify-content: center;
+}
+
+.info-card{
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+    padding: 3rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+
+    .info-logo-section{
+        position: absolute;
+        top: -40%;
+        transform: translate(0% , 50%);
+        width: 65px;
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        -webkit-transform: translate(0% , 50%);
+        -moz-transform: translate(0% , 50%);
+        -ms-transform: translate(0% , 50%);
+        -o-transform: translate(0% , 50%);
+        background: #FFFFFF14;
+        border: 1px solid #FFFFFF80;
+        backdrop-filter: blur(100px);
+        
+        svg{
+            transform: scale(0.7);
+            -webkit-transform: scale(0.7);
+            -moz-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+            -o-transform: scale(0.7);
+        }
+    }
+}
+
+.info-card-title{
+    font-weight: 600;
+}
+
+.info-card-green{
+    background: linear-gradient(106.88deg, rgba(0, 255, 26, 0.1) 19.63%, rgba(255, 255, 255, 0.1) 98.74%);
+    border: 1px solid #00FF1A
+}
+
+.info-card-blue{
+    background: linear-gradient(106.88deg, rgba(74, 1, 224, 0.1) 19.63%, rgba(255, 255, 255, 0.1) 98.74%);
+    border: 1px solid #5300FF
+}
+
+.info-card-red{
+    background: linear-gradient(106.88deg, rgba(255, 19, 4, 0.1) 19.63%, rgba(255, 255, 255, 0.1) 98.74%);
+    border: 1px solid #FF1F00
+}
