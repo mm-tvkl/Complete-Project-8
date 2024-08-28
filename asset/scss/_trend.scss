@@ -1,0 +1,226 @@
+.trend-card-section{
+    padding: 20rem 0;
+    row-gap: 15rem;
+}
+
+.trend-card{
+    background: #FFFFFF1A;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(100px);
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    .trend-card-header{
+        text-align: center;
+        position: relative;
+        height: 120px;
+
+        img{
+            position: absolute;
+            top: -220%;
+            left: 50%;
+            transform: translate(-50% , 0) scale(1.05);
+            -webkit-transform: translate(-50% , 0) scale(1.05);
+            -moz-transform: translate(-50% , 0) scale(1.05);
+            -ms-transform: translate(-50% , 0) scale(1.05);
+            -o-transform: translate(-50% , 0) scale(1.05);
+        }
+    }
+
+    .trend-card-body{
+        // padding: 1rem 0;
+
+        .trend-card-title{
+            font-weight: 700;
+        }
+
+        .last-req-section{
+            display: flex;
+            justify-content: space-between;
+
+            .last-req-para{
+            
+                svg{
+                    transform: scale(0.7);
+                    -webkit-transform: scale(0.7);
+                    -moz-transform: scale(0.7);
+                    -ms-transform: scale(0.7);
+                    -o-transform: scale(0.7);
+                }
+            }
+        } 
+    }
+}
+
+.trend-card-4{
+    display: none;
+}
+
+@media screen and (max-width:1400px) {
+    .trend-card{
+        .trend-card-header{
+            img{
+                position: absolute;
+                top: -200%;
+                left: 50%;
+                transform: translate(-50% , 0) scale(0.9);
+                -webkit-transform: translate(-50% , 0) scale(0.9);
+                -moz-transform: translate(-50% , 0) scale(0.9);
+                -ms-transform: translate(-50% , 0) scale(0.9);
+                -o-transform: translate(-50% , 0) scale(0.9);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .trend-card{
+        .trend-card-header{
+            img{
+                position: absolute;
+                top: -170%;
+                left: 50%;
+                transform: translate(-50% , 0) scale(0.75);
+                -webkit-transform: translate(-50% , 0) scale(0.75);
+                -moz-transform: translate(-50% , 0) scale(0.75);
+                -ms-transform: translate(-50% , 0) scale(0.75);
+                -o-transform: translate(-50% , 0) scale(0.75);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .trend-card-4{
+        display: block;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .trend-card-section{
+        padding: 10rem 0;
+        row-gap: 10rem;
+    }
+
+    .trend-card{
+        .trend-card-header{
+            text-align: center;
+            position: relative;
+            height: 110px;
+    
+            img{
+                position: absolute;
+                top: -220%;
+                left: 50%;
+                transform: translate(-50% , 0) scale(1.05);
+                -webkit-transform: translate(-50% , 0) scale(1.05);
+                -moz-transform: translate(-50% , 0) scale(1.05);
+                -ms-transform: translate(-50% , 0) scale(1.05);
+                -o-transform: translate(-50% , 0) scale(1.05);
+            }
+        }
+
+        .trend-card-header{
+            img{
+                //width: 100%;
+                position: absolute;
+                top: -170%;
+                left: 50%;
+                transform: translate(-50% , 0) scale(0.6);
+                -webkit-transform: translate(-50% , 0) scale(0.6);
+                -moz-transform: translate(-50% , 0) scale(0.6);
+                -ms-transform: translate(-50% , 0) scale(0.6);
+                -o-transform: translate(-50% , 0) scale(0.6);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:578px) {
+    .trend-card-section{
+        padding: 17rem 0;
+        row-gap: 17rem;
+    }
+
+    .trend-card{
+
+        .trend-card-header{
+            text-align: center;
+            position: relative;
+            height: 135px;
+
+            img{
+                //width: 100%;
+                position: absolute;
+                top: -170%;
+                left: 50%;
+                transform: translate(-50% , 0) scale(1);
+                -webkit-transform: translate(-50% , 0) scale(1);
+                -moz-transform: translate(-50% , 0) scale(1);
+                -ms-transform: translate(-50% , 0) scale(1);
+                -o-transform: translate(-50% , 0) scale(1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .trend-card-section{
+        padding: 17rem 0;
+        row-gap: 17rem;
+    }
+
+    .trend-card{
+
+        .trend-card-header{
+            text-align: center;
+            position: relative;
+            height: 135px;
+
+            img{
+                width: 100%;
+                position: absolute;
+                top: -170%;
+                left: 50%;
+                transform: translate(-50% , 0) scale(0.9);
+                -webkit-transform: translate(-50% , 0) scale(0.9);
+                -moz-transform: translate(-50% , 0) scale(0.9);
+                -ms-transform: translate(-50% , 0) scale(0.9);
+                -o-transform: translate(-50% , 0) scale(0.9);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .trend-card-section{
+        padding: 17rem 0;
+        row-gap: 10rem;
+    }
+
+    .trend-card{
+
+        .trend-card-header{
+            text-align: center;
+            position: relative;
+            height: 135px;
+
+            img{
+                width: 100%;
+                position: absolute;
+                top: -110%;
+                left: 50%;
+                transform: translate(-50% , 0) scale(0.9);
+                -webkit-transform: translate(-50% , 0) scale(0.9);
+                -moz-transform: translate(-50% , 0) scale(0.9);
+                -ms-transform: translate(-50% , 0) scale(0.9);
+                -o-transform: translate(-50% , 0) scale(0.9);
+            }
+        }
+    }
+}
