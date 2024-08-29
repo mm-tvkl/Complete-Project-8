@@ -1627,9 +1627,11 @@ body {
   }
 }
 .newsletter {
-  background: linear-gradient(90deg, #A50E86 0%, #D37506 90%);
+  background: linear-gradient(90deg, #A50E86 0%, #D37506 100%);
   padding: 3rem 1rem;
-  border: 10px solid rgba(255, 255, 255, 0.1764705882);
+  border-image: linear-gradient(90deg, #ff7ce5 0%, #ffb866 100%) 1;
+  border-width: 10px;
+  border-style: solid;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -1733,7 +1735,6 @@ body {
   .newsletter {
     background: linear-gradient(90deg, #A50E86 0%, #D37506 90%);
     padding: 3rem 1rem;
-    border: 10px solid rgba(255, 255, 255, 0.1764705882);
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
