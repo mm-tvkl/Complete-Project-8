@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./asset/scss/main.scss ./asset/css/main.css --watch"
+    "sass": "sass ./asset/scss/main.scss ./asset/css/main.css --watch",
+    "sass-min": "sass ./asset/scss/main.scss ./asset/css/main.min.css --watch --style=compressed"
   },
   "author": "mm-tvkl",
   "license": "MIT",
