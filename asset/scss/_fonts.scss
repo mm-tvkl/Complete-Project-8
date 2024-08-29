@@ -3,19 +3,7 @@
     font-style: normal;
     font-weight: normal;
     src:
-    url("../font/_eot/KalamehWeb-Regular.eot") format("OpenType"),
-    url("../font/_Woff/KalamehWeb-Regular.woff") format("woff"),
-    url("../font/_Woff2/KalamehWeb-Regular.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: kalameh;
-    font-style: normal;
-    font-weight: 100;
-    src:
-    url("../font/_eot/KalamehWeb-Thin.eot") format("OpenType"),
-    url("../font/_Woff/KalamehWeb-Thin.woff") format("woff"),
-    url("../font/_Woff2/KalamehWeb-Thin.woff2") format("woff2");
+    url("../font-2/YekanBakh-Medium.f7360956.woff") format("woff");
 }
 
 @font-face {
@@ -23,9 +11,7 @@
     font-style: normal;
     font-weight: bold;
     src:
-    url("../font/_eot/KalamehWeb-Bold.eot") format("OpenType"),
-    url("../font/_Woff/KalamehWeb-Bold.woff") format("woff"),
-    url("../font/_Woff2/KalamehWeb-Bold.woff2") format("woff2");
+    url("../font-2/YekanBakh-Bold.bbd877a3.woff") format("woff");
 }
 
 @font-face {
@@ -33,7 +19,5 @@
     font-style: normal;
     font-weight: 900;
     src:
-    url("../font/_eot/KalamehWeb-Black.eot") format("OpenType"),
-    url("../font/_Woff/KalamehWeb-Black.woff") format("woff"),
-    url("../font/_Woff2/KalamehWeb-Black.woff2") format("woff2");
+    url("../font-2/YekanBakh-Heavy.630c4fa4.woff") format("woff");
 }
